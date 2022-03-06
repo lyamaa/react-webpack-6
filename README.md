@@ -70,6 +70,7 @@ You can view the development server at `localhost:3000`.
 ### Loaders
 
 - [`babel-loader`](https://webpack.js.org/loaders/babel-loader/) - Transpile files with Babel and webpack
+- [`ts-loader`](https://github.com/TypeStrong/ts-loader) - use TypeScript to transpile JavaScript files
 - [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Load SCSS and compile to CSS
 - [`node-sass`](https://github.com/sass/node-sass) - Node Sass
 - [`css-loader`](https://webpack.js.org/loaders/css-loader/) - Resolve CSS imports
@@ -96,5 +97,4 @@ You can view the development server at `localhost:3000`.
 - [`terser-webpack-plugin`](https://github.com/webpack-contrib/terser-webpack-plugin) - Optimize and minimize JavaScript
 - [`react-refresh-webpack-plugin`](https://github.com/pmmmwh/react-refresh-webpack-plugin) - HMR using React Fast Refresh
 - [`dotenv-webpack`](https://github.com/mrsteele/dotenv-webpack) - Supports dotenv and other environment variables
-- [`@svgr/webpack`](https://github.com/mrsteele/dotenv-webpack) - SVGR can be used as a webpack loader, this way you can import your SVG directly as a React Component.
-- [`babel-jest`](https://www.npmjs.com/package/babel-jest) - Babel jest plugin for transforimg `.js` and `.jsx` files
+- [`@svgr/webpack`](https://github.com/mrsteele/dotenv-webpack) - SVGR can be used as a webpack loader, this way you can 
