@@ -25,8 +25,11 @@ module.exports = merge(common, {
     rules: [
       // ... other rules
       {
-        test: /\.[js]sx?$/,
+        test: /\.[js | ts]sx?$/,
         exclude: /node_modules/,
+        resolve: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        },
         use: [
           // ... other loaders
           {

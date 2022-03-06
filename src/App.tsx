@@ -1,6 +1,5 @@
 import { Component } from 'react'
 
-import Logo from './assets/altafino.svg'
 import './app.styles.scss'
 
 class App extends Component {
@@ -14,11 +13,6 @@ class App extends Component {
             <div className={'bg-red-500 text-white'}>
               process.env.API_URL:{process.env.API_URL} !!! Make sure to put
               both .env.* files in gitignore.
-            </div>
-            <div className={'container mx-auto px-4'}>
-              <a href={'https://altafino.com'}>
-                <Logo className={'mt-10 px-10'} />
-              </a>
             </div>
           </div>
         </div>

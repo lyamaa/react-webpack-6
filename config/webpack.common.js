@@ -9,7 +9,7 @@ const autoprefixer = require('autoprefixer') // help tailwindcss to work
 
 module.exports = {
   // Where webpack looks to start building the bundle
-  entry: [paths.src + '/index.js'],
+  entry: [paths.src + '/index.tsx'],
 
   // Where webpack outputs the assets and bundles
   output: {
@@ -55,7 +55,19 @@ module.exports = {
   module: {
     rules: [
       // JavaScript: Use Babel to transpile JavaScript files
-      { test: /\.(js|jsx)$/, exclude: /node_modules/, use: ['babel-loader'] },
+      {
+        test: /\.(js|jsx|tsx|ts)$/,
+        exclude: /node_modules/,
+        resolve: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        },
+        use: ['babel-loader'],
+      },
+      {
+        test: /\.ts$/,
+        exclude: [/node_modules/],
+        loader: 'ts-loader',
+      },
 
       // Styles: Inject CSS into the head with source maps
       {
