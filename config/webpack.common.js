@@ -63,10 +63,15 @@ module.exports = {
         },
         use: ['babel-loader'],
       },
+      // Typescript: Use TypeScript to transpile JavaScript files
       {
-        test: /\.ts$/,
+        test: /\.(tsx|ts)$/,
         exclude: [/node_modules/],
+
         loader: 'ts-loader',
+        options: {
+          transpileOnly: true,
+        },
       },
 
       // Styles: Inject CSS into the head with source maps
