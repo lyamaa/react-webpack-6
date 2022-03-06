@@ -4,8 +4,7 @@
 ## Installation
 
 ```
-git clone https://github.com/altafino/react-webpack-5-tailwind-2.git
-cd react-webpack-5-tailwind-2
+git clone git@github.com:lyamaa/react-webpack-6.git
 yarn / npm i
 ```
 
